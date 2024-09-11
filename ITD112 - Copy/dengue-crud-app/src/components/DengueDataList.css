@@ -126,11 +126,11 @@
 
 .chart-container {
   margin-top: 40px;
-  text-align: center; /* Center align the chart container */
+  text-align: center; 
 }
 
 .chart-container canvas {
-  max-width: 100%; /* Ensure the chart scales with the container */
+  max-width: 100%; 
 }
 
 .edit-form-container {
@@ -144,7 +144,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #fff; /* White background for the form */
+  background-color: #fff; 
 }
 
 .data-form input {
@@ -175,6 +175,6 @@
 
 .edit-form-container .button-group {
   display: flex;
-  gap: 10px; /* Space between buttons */
-  margin-top: 10px; /* Space above the button group */
+  gap: 10px; 
+  margin-top: 10px; 
 }
