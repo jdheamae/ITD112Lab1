@@ -1,0 +1,48 @@
+/* App.css */
+
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right; 
+  background-color: #f4f4f4;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+}
+
+.app-title {
+  text-align: center;
+  margin-top: 60px; /* To avoid overlap with the fixed navbar */
+}
+
+.form-container {
+  margin: 20px 0;
+}
+
+.data-list-container {
+  margin: 20px 0;
+}
+
+.visualization-container {
+  margin: 20px 0;
+}

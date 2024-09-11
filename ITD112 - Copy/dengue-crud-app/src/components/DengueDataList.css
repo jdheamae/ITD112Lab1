@@ -1,0 +1,180 @@
+.data-list {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 300px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.filter-clear {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.filter-clear:hover {
+  background-color: #e2e6ea;
+  border-color: #ccc;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.data-table td.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.data-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.data-table button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.data-table button:first-child:hover {
+  background-color: #218838;
+}
+
+.data-table button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.data-table button:last-child:hover {
+  background-color: #c82333;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination span {
+  align-self: center;
+}
+
+.chart-container{
+  margin-top: 100px;
+}
+
+
+.chart-container {
+  margin-top: 40px;
+  text-align: center; /* Center align the chart container */
+}
+
+.chart-container canvas {
+  max-width: 100%; /* Ensure the chart scales with the container */
+}
+
+.edit-form-container {
+  margin: 20px 0;
+}
+
+.data-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff; /* White background for the form */
+}
+
+.data-form input {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.data-form button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.data-form button:disabled {
+  background-color: #6c757d;
+}
+
+.data-form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.edit-form-container .button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Space above the button group */
+}
