@@ -5,7 +5,7 @@ import { Bar, Scatter } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, PointElement, Title, Tooltip, Legend } from 'chart.js';
 import './DengueDataList.css';
 
-// Register Chart.js components
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, PointElement, Title, Tooltip, Legend);
 
 const DengueDataList = () => {
@@ -109,10 +109,10 @@ const DengueDataList = () => {
     }
   };
 
-  // Define a threshold for high cases
-  const highCasesThreshold = 100; // Adjust this value as needed
+  
+  const highCasesThreshold = 100; 
 
-  // Prepare data for the bar chart with color coding for high cases
+  
   const barChartData = {
     labels: filteredData.map(data => data.location),
     datasets: [
@@ -120,15 +120,15 @@ const DengueDataList = () => {
         label: 'Number of Cases',
         data: filteredData.map(data => data.cases),
         backgroundColor: filteredData.map(data =>
-          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 0.6)' : 'rgba(54, 162, 235, 0.6)' // Red for high cases, Blue otherwise
+          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 0.6)' : 'rgba(54, 162, 235, 0.6)' 
         ),
         borderColor: filteredData.map(data =>
-          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 1)' : 'rgba(54, 162, 235, 1)' // Red for high cases, Blue otherwise
+          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 1)' : 'rgba(54, 162, 235, 1)' 
         ),
         borderWidth: 2,
-        borderRadius: 8, // Rounded corners
-        hoverBackgroundColor: 'rgba(255, 99, 132, 0.8)', // Darker Red on hover
-        hoverBorderColor: 'rgba(255, 99, 132, 1)', // Darker Red on hover
+        borderRadius: 8, 
+        hoverBackgroundColor: 'rgba(255, 99, 132, 0.8)', 
+        hoverBorderColor: 'rgba(255, 99, 132, 1)', 
         barThickness: 30,
       },
     ],
@@ -138,9 +138,9 @@ const DengueDataList = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'right', // Change the position to right
+        position: 'right', 
         labels: {
-          usePointStyle: true, // Use point style to reduce legend clutter
+          usePointStyle: true, 
           padding: 20,
         }
       },
@@ -160,7 +160,7 @@ const DengueDataList = () => {
         },
         ticks: {
           autoSkip: true,
-          maxRotation: 45, // Rotate labels to avoid overlap
+          maxRotation: 45, 
           minRotation: 45,
         },
       },
@@ -189,10 +189,10 @@ const DengueDataList = () => {
           label: data.location,
         })),
         backgroundColor: filteredData.map(data =>
-          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 0.8)' : 'rgba(54, 162, 235, 0.8)' // Red for high cases, Blue otherwise
+          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 0.8)' : 'rgba(54, 162, 235, 0.8)' 
         ),
         borderColor: filteredData.map(data =>
-          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 1)' : 'rgba(54, 162, 235, 1)' // Red for high cases, Blue otherwise
+          data.cases > highCasesThreshold ? 'rgba(255, 99, 132, 1)' : 'rgba(54, 162, 235, 1)' 
         ),
         borderWidth: 2,
         pointRadius: 8,
