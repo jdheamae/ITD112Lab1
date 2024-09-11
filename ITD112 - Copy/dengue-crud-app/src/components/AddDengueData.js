@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./firebase";
-import './AddDengueData.css'; // Custom CSS for styling
+import './AddDengueData.css'; 
 
 const AddDengueData = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ const AddDengueData = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setError(""); // Reset error
+    setError(""); 
 
     try {
       await addDoc(collection(db, "dengueData"), {
