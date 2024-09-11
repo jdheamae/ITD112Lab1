@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { db } from './firebase';
 import { collection, addDoc } from 'firebase/firestore';
-import './CsvUploader.css'; // Assuming custom CSS for styling
+import './CsvUploader.css'; 
 
 function CsvUploader() {
   const [csvFile, setCsvFile] = useState(null);
